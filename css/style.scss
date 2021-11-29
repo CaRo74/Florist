@@ -1,8 +1,7 @@
 @charset 'UTF-8';
 
+// @import "item-title";
 @import "mixin";
-
-@import "item-title";
 
 
 *, *::before, *::after {
@@ -41,6 +40,7 @@ section{
   position: relative;
   margin-bottom: 32px;
   padding-bottom: 24px;
+  
   &::after{
     position: absolute;
     content: "";
@@ -139,7 +139,7 @@ header {
 }
 
 .concept {
-  padding: 80px 0 20px;
+  padding: 80px 0 70px;
   background: linear-gradient(#fff 70%,#EDEDED 30%);
   & .concept-img {
     height: 400px;
@@ -148,12 +148,12 @@ header {
 }
 .work {
   padding-top: 80px;
-  & .work-contents{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 1610px;
+    & .work-contents{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 1610px;
     & .work-item{
       padding-bottom: 80px;
       width: 420px;
@@ -165,7 +165,10 @@ header {
         margin-bottom: 16px;
       }
       & .work-title {
-        @include item-title;
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        // @include item-title;
       }
       & p{
         text-align: left;
@@ -176,11 +179,98 @@ header {
 }
 .florist {
   padding-top: 80px;
-  & .florist-contents{
+  background: linear-gradient(#EDEDED 60%,#fff 40%);
+  & .florist-contents {
     display: flex;
     justify-content: space-between;
     & .florist-item {
       width: 300px;
+      text-align: left;
+      padding-bottom: 40px;
+      & img {
+        margin-bottom: 12px;
+      }
+      & .florist-name {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.6;
+      }
     }
   }
+}
+.shop-information {
+  padding-top: 80px;
+  & .shop-information-contents {
+    display: flex;
+    justify-content: space-between;
+    & .shop-information-img {
+      width: 480px;
+      margin-right: 48px;
+    }
+    & .shop-address {
+      text-align: left;
+      width: 432px;
+      dl{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 32px 40px;
+        & dt{
+          width: 20%;
+          padding-bottom: 30px;
+        }
+        & dd {
+          width: 65%;
+          padding-bottom: 30px;
+          // margin-left: 0;
+        }
+      }
+    }
+  }
+}
+.contact {
+  padding-top: 80px;
+  background-image: url(../img/contact_us.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  & .contact-btn {
+    background-color: #fff;
+    border: 1px solid #A0A0A0;
+    width: 360px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 30px 100px;
+    display: flex;
+    cursor: pointer;
+    & .mail{
+      width: 30px;
+      height: 20px;
+      border: 1px solid #2b2b2b;
+      position: relative;
+      margin-right: 24px;
+      &::before {
+        top: 30px;
+        left: 85px;
+        width: 30px;
+        height: 20px;
+        border: 1px solid #2b2b2b;
+      }
+      &::after {
+        top: 21px;
+        left: 90px;
+        width: 20px;
+        height: 20px;
+        border-right: 1px solid #2b2b2b;
+        border-bottom: 1px solid #2b2b2b;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+.footer {
+  background-color: #fff;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }

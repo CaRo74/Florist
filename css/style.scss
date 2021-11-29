@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #2B2B2B;
 }
 h1, h2, h3, p {
@@ -144,16 +144,32 @@ header {
   }
 }
 .work {
-  padding: 80px 0;
+  padding-top: 80px;
   & .work-contents{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    flex-direction: column;
-    height: 1680px;
+    height: 1610px;
     & .work-item{
       padding-bottom: 80px;
       width: 420px;
+
+      &:nth-child(3){
+        margin-top: 120px;
+      }
+      & img{
+        margin-bottom: 16px;
+      }
+      & .work-title {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.6;
+      }
+      & p{
+        text-align: left;
+        line-height: 28px;
+      }
     }
   }
 }

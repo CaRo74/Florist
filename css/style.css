@@ -1,0 +1,209 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #2B2B2B;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: #2B2B2B;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+section {
+  text-align: center;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.text {
+  line-height: 1.8;
+  margin-bottom: 40px;
+  letter-spacing: 1.4px;
+}
+
+header {
+  background-image: url(../img/header.png);
+  background-size: cover;
+  height: 620px;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+header .header-nav {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  height: 64px;
+  left: 0;
+}
+
+header .header-nav .header-nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-nav .header-nav-wrapper .header-nav-logo {
+  font-size: 2.25rem;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu #menu-btn-check {
+  display: none;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu #menu-btn-check:checked ~ .menu-btn span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu #menu-btn-check:checked ~ .menu-btn span:nth-child(2) {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu #menu-btn-check:checked ~ .menu-btn span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu .menu-btn {
+  display: inline-block;
+  width: 32px;
+  height: 21px;
+  position: relative;
+  cursor: pointer;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu .menu-btn span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu .menu-btn span:nth-child(2) {
+  top: 50%;
+}
+
+header .header-nav .header-nav-wrapper .hamburger-menu .menu-btn span:nth-child(3) {
+  bottom: 0;
+}
+
+header .content-wrapper h1 {
+  font-size: 7.5rem;
+  padding-top: 240px;
+}
+
+header .content-wrapper p {
+  word-spacing: 4px;
+}
+
+header .content-wrapper p::before, header .content-wrapper p::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.concept {
+  padding: 80px 0 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fff), color-stop(30%, #EDEDED));
+  background: linear-gradient(#fff 70%, #EDEDED 30%);
+}
+
+.concept .concept-img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.work {
+  padding: 80px 0;
+}
+
+.work .work-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1680px;
+}
+
+.work .work-contents .work-item {
+  padding-bottom: 80px;
+  width: 420px;
+}
+/*# sourceMappingURL=style.css.map */

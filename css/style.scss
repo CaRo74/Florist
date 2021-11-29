@@ -2,6 +2,9 @@
 
 @import "mixin";
 
+@import "item-title";
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -162,14 +165,22 @@ header {
         margin-bottom: 16px;
       }
       & .work-title {
-        text-align: left;
-        font-size: 1.5rem;
-        line-height: 1.6;
+        @include item-title;
       }
       & p{
         text-align: left;
         line-height: 28px;
       }
+    }
+  }
+}
+.florist {
+  padding-top: 80px;
+  & .florist-contents{
+    display: flex;
+    justify-content: space-between;
+    & .florist-item {
+      width: 300px;
     }
   }
 }

@@ -225,4 +225,17 @@ header .content-wrapper p::before, header .content-wrapper p::after {
   text-align: left;
   line-height: 28px;
 }
+
+.florist {
+  padding-top: 80px;
+}
+
+.florist .florist-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
